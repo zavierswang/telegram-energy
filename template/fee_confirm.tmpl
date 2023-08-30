@@ -1,0 +1,10 @@
+<b>租用时长：</b>{{.RentDuration}}
+<b>租用数量：</b>{{.RentEnergy}} 能量
+➖➖➖➖➖➖➖➖➖➖➖
+<b>订单概览: </b>能量租用时长<code>{{.RentDuration}}</code>能量数量{{.RentEnergy}}
+<b>转帐次数: </b>≈ <b>{{count .RentEnergy}}</b> 次
+<b>订单金额: </b>≈ <code>{{.CastTRX}}</code> TRX
+<b>当前时间: </b>{{format .CurrentTime}}
+➖➖➖➖➖➖➖➖➖➖➖
+请在<code>{{.ExpiredTime}}</code>之前完成支付，超时系统无法自动充值到帐‼️
+相比直接转账消耗TRX (最高可节省约87%)

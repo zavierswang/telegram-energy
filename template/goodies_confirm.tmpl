@@ -1,0 +1,10 @@
+<b>接收地址：</b><code>{{.RentAddress}}</code>
+<b>租用时长：</b>{{.RentDuration}}
+<b>租用数量：</b>{{.RentEnergy}} 能量
+<b>订单概览：</b>能量租用时长<code>{{.RentDuration}}</code>能量数量{{.RentEnergy}}
+<b>转帐次数: </b>≈ <b>{{count .RentEnergy}}</b> 次
+➖➖➖➖➖➖➖➖➖➖➖
+<b>订单金额：</b>≈ <code>{{.CastTRX}}</code> TRX
+<b>当前时间：</b>{{format .CurrentTime}}
+
+相比直接燃烧TRX(最高可节省约87%)

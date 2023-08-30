@@ -1,0 +1,31 @@
+app:
+  env: prod                                                                         #运行环境
+  port: 80                                                                          #启用的HTTP端口（未使用）
+  app_name: telegram-energy                                                         #程序名称
+  license: 8f5b172827908b96dd62ec2b7ac60797                                         #授权码(找管理获取)
+  support: dingwo                                                                   #客服ID
+  groups:                                                                           #群组通知ID
+    - test2_zoom_group
+
+telegram:
+  token: 1111111111:aaaaaaaaaaaaaaaaaaa                                             #Bot Token
+  tron_scan_api_key: 22222222-2244-4bf8-82b8-333333333333                           #tron apiKey
+  grid_api_key: 22222222-2244-4bf8-82b8-333333333333                                #grid apiKey
+  alias_key: TTKJ                                                                   #私钥别名
+  private_key: aaaaaaaaaaaaaaaaaaaaaaa                                              #私钥
+  receive_address: TXyh7opwbn6yJ7cabh8888888888888888                               #收款地址
+  send_address: TXyh7opwbn6yJ7cabh8888888888888888                                  #出款地址
+  enable_api: fee                                                                   #启用能量租凭平台
+  ratio: 0.0                                                                        #利润率20%
+  api_id: aa                                                                        #平台id
+  app_key: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                                         #平台Key
+
+
+db:
+  driver: mysql
+  dsn: root:123456@tcp(127.0.0.1:3306)/energy?charset=utf8mb4&parseTime=True&loc=Local
+  max_idle_conns: 10
+  max_open_conns: 100
+  log_mode: info
+  enable_file_log_writer: true
+  log_filename: sql.log
